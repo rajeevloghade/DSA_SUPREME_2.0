@@ -36,7 +36,7 @@ int main()
 {
 
     vector<int> vector = {1, 2, 0, -3, 4, 0, -5, 6, -0};
-
+    //Using 2 point approach
     moveAllNegativeToLeft(vector);
     printVector(vector);
     return 0;
