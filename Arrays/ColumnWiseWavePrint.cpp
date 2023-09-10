@@ -6,7 +6,7 @@ void columnWiseWavePrint(vector<vector<int>> vector)
 {
 
     int rowSize = vector.size();
-    int colSize = vector[0].size() - 1;
+    int colSize = vector[0].size();
 
     for (int col = 0; col < colSize; col++)
     {
