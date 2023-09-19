@@ -37,7 +37,7 @@ int main()
 }
 
 /**
-Pivot element in the Array : draw array element in graph format
+Pivot element (MINIMUM ELEMENT AS PIVOT) in the Array : draw array element in graph format
 
 Time Complexity :  O(log n)
 Space Complexity : O(1)
