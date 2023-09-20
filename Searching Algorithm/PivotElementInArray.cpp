@@ -5,7 +5,7 @@ using namespace std;
 int pivotElemetInArray(vector<int> array)
 {
     int start = 0;
-    int end = array.size();
+    int end = array.size()-1;
 
     while (start < end)
     {
@@ -30,7 +30,7 @@ int main()
 
     vector<int> array = {7, 9, 1, 2, 3};
 
-    cout << "Pivot Element in array at index : " << pivotElemetInArray(array)
+    cout << "Pivot Element (MINIMUM ELEMENT AS PIVOT) in array at index : " << pivotElemetInArray(array)
          << endl;
 
     return 0;
