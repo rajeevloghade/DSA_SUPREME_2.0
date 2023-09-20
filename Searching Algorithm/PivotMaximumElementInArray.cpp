@@ -4,19 +4,22 @@ using namespace std;
 
 int pivotElemetInArray(vector<int> array)
 {
+    int size = array.size() - 1;
     int start = 0;
-    int end = array.size();
+    int end = size;
 
     while (start < end)
     {
         int mid = start + (end - start) / 2;
 
         // special case handle for(16 (mid-1) > 2 (mid))
-        if (array[mid] < array[mid - 1])
+        // also check for index size within array index range
+        if (mid - 1 >= 0 && array[mid] < array[mid - 1])
         {
             return mid - 1;
         } // special case handle for(16 (mid) > 2 (mid+1))
-        else if (array[mid] > array[mid + 1])
+        // also check for index size within array index range
+        else if (mid + 1 < size && array[mid] > array[mid + 1])
         {
             return mid;
         }
