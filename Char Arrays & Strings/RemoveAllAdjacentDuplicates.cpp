@@ -29,4 +29,6 @@ int main()
     cin >> input;
     cout << "After removing all adjacent duplicate : "
          << removeAllAdjacentDuplicates(input) << endl;
+    cout << "Time Complexity : O(n)" << endl;
+    cout << "Space Complexity : O(1)" << endl;
 }
