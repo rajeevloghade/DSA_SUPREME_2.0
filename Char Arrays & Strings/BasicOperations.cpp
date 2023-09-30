@@ -158,4 +158,55 @@ int main()
 
     cout << "After appending lastName to firstName : " << firstName << endl
          << endl;
+
+    string myString = "RajeevLoghade";
+    myString.pop_back(); // pop_back function
+    cout << "After pop : " << myString << endl
+         << endl;
+    myString.push_back('e'); // push_back function
+    cout << "After push : " << myString << endl
+         << endl;
+
+    string myString2 = "This is is a car";
+    cout << "Before erase : " << myString2 << endl
+         << endl;
+    myString2.erase(7, 3); // erase function
+    cout << "After erase : " << myString2 << endl
+         << endl;
+
+    string myString3 = "This a car";
+    cout << "Before insert : " << myString3 << endl
+         << endl;
+    myString3.insert(5, "is "); // insert function
+    cout << "After insert : " << myString3 << endl
+         << endl;
+
+    string myString4 = "This is a car";
+    string find = "is";
+    if (myString4.find(find) != string::npos) // find function
+    {
+        cout << "Found" << endl
+             << endl;
+    }
+    else
+    {
+        cout << "Not Found" << endl
+             << endl;
+    }
+
+    string myString5 = "Rajeev";
+    string myString6 = "Rajeev";
+    if (myString5.compare(myString6) == 0) // compare function
+    {
+        cout << "compared and Matching" << endl
+             << endl;
+    }
+    else
+    {
+        cout << "compared and Not Matching" << endl
+             << endl;
+    }
+
+    string myString7 = "This is a Rajeev Loghade";
+    cout << "Substring :" << myString7.substr(10, 6); // Substring function
 }
