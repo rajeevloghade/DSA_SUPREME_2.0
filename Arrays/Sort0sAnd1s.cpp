@@ -19,6 +19,8 @@ vector<int> sort0sAnd1s(vector<int> vector)
             int temp = vector[start];
             vector[start] = vector[end];
             vector[end] = temp;
+            start++;
+            end--;
         }
     }
 
@@ -42,5 +44,13 @@ int main()
 
     cout << "After sorting 0s and 1s ";
     printVector(sort0sAnd1s(vector));
+
+    cout << "Time Complexity : O(n)" << endl;
+    cout << "Space Complexity : O(1)" << endl;
     return 0;
 }
+
+/**
+ Same variation we have for sorting -ve to left and +ve to right
+ Approach would be same
+*/
