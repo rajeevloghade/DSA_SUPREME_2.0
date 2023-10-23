@@ -19,7 +19,7 @@ int peakElementInMountain(vector<int> array)
         }
         else
         {
-            // here we may be at the peak element or right side of it, then store element and point end to mid position
+            // here we may be at the peak element or left side of it, then store element and point end to mid position
             peakElement = array[mid];
             end = mid;
         }
