@@ -81,7 +81,7 @@ int main()
     {
         keyIndex = binarySearch(array, 0, pivotIndex, key);
     }
-    // Search in A line
+    // Search in B line
     else
     {
         keyIndex = binarySearch(array, pivotIndex + 1, array.size() - 1, key);
